@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.5s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+* img:hover {
+  transform: scale(1.06);
+}
+body {
+  margin: 0;
+  background-color: #faf9f9;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #faf9f9;
+  padding-bottom: 25px;
+  margin: 20px;
+  width: 700px;
+}
+#header {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.text-header,
+.photo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-header h1 {
+  font-size: 50px;
+  color: #333333;
+  letter-spacing: -0.02em;
+}
+.text-header h2 {
+  font-size: 20px;
+  color: #494949;
+  font-weight: 400;
+}
+.photo-header img {
+  width: 200px;
+  border-radius: 10%;
+  background-position: center;
+  background-size: cover;
+}
+#about,
+#footer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  padding-bottom: 25px;
+  margin: 20px;
+  width: 900px;
+}
+#footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+.historia,
+.fama,
+.matrimonio,
+.filmes {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.filmes {
+  border-top: 1px solid #494949;
+  margin-top: 50px;
+}
+.photo,
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.historia img {
+  max-width: 200px;
+}
+.fama img {
+  width: 300px;
+}
+.matrimonio img {
+  max-width: 400px;
+}
+.text {
+  font-size: 16px;
+  color: #494949;
+  margin: 20px;
+}
+.filme ul {
+  color: #494949;
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  .container-header {
+    border: none;
+  }
+  .container {
+    margin: 10px;
+  }
+  .historia,
+  .fama,
+  .matrimonio,
+  .filmes {
+    display: block;
+    border-top: 1px solid #494949;
+    padding: 20px 0;
+    margin: auto;
+  }
+  .photo,
+  .text {
+    flex-direction: row;
+  }
+  .photo-header img {
+    max-width: 200px;
+  }
+  .text-header h1 {
+    font-size: 52px;
+  }
+
+  .text-header h2 {
+    font-size: 18px;
+  }
+  .carmen {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -40px;
+  }
+
+  .carmen img {
+    width: 150px;
+    margin-bottom: -90px;
+  }
+}
